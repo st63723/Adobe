@@ -1,0 +1,203 @@
+@import 'variables';
+
+.offer-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    height: 40px;
+    color: #F7F5E6;
+    font-family: $proxima-nova;
+}
+
+header {
+    display: flex;
+    background-color: $light-gray-color;
+    .inner-wrapper{
+        height: 84px;
+        margin-top:44px;
+    }
+    .left-nav a:first-child{
+        padding-right: 28px;
+        display: inline-block;
+    }
+    .right-nav{
+        justify-content: end;
+         a{
+            padding-right: 28px;
+            display: inline-block;
+            &:last-child{
+                padding-right: 0px;
+            }
+        }
+    }
+    .left-nav, .right-nav{
+        display: flex;
+        text-transform: uppercase;
+        a {
+            font-size: $font-size-12;
+            font-family: $proxima-nova-bold;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+    .middle-nav{
+        display: flex;
+        font-family: $proxima-nova;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .cross {
+            z-index: 1;
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            display: none;
+            top: 30px;
+            left: 40px;
+            .fa{
+                font-size: $font-size-24;
+            }
+        }
+        .logo{
+            color:#293D45;
+            font-size: $font-size-32;
+            line-height: 20px;
+            font-family: $somatic-rounded;
+        }
+        nav{
+            color: $primary-color;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 28px;
+            text-transform: capitalize;
+            a{
+                text-decoration: none;
+                padding: 0 14px;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: 320px) {
+    .icon{
+        display:block;
+    }
+    header{ 
+        .inner-wrapper{
+            margin: 25px;
+            height: auto;
+            .right-nav{
+                a:nth-child(2) {
+                    padding-right: 0;
+                }
+            }
+            .login-mobile{
+                display: none;
+            }
+            .right-nav-in{
+                margin-top: -29px;
+                position: relative;
+            }
+        .middle-nav{
+            justify-content: left;
+            align-items: flex-start;
+            flex-direction: row;
+            .menu-mobile{
+                display: none;
+               
+            }
+            
+             .logo {
+                line-height: 14px;
+                padding-left: 22px;
+            }
+            nav{
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin-top: 0;
+                padding-top: 80px;
+                padding-left: 30px;
+                height: 100vh;
+                a{
+                    padding: 16px 14px;
+                }
+                .about-mobile{
+                    display: flex;
+                    margin-top: 60px;
+                    flex-direction: column;
+                }
+            }
+        }
+     }
+    }
+} 
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 769px) {
+    .icon{
+        display:none;
+    }
+    header{ 
+        .inner-wrapper{
+            height: 84px;
+            .right-nav{
+                a:nth-child(2) {
+                    padding-right: 28px;
+                }
+            }
+            .login-mobile{
+                display: block;
+            }
+        .middle-nav{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+             .logo {
+                line-height: 20px;
+                padding-left: inherit;
+            }
+            .about-mobile{
+                display: none;
+            }
+            .menu-mobile{
+                display: flex;
+                flex-direction: row;
+                margin-top: inherit;
+                background: transparent;
+                position: relative;
+                width: auto;
+                left: inherit;
+                padding-top: inherit;
+                margin-top: 28px;
+                padding-left: inherit;
+                top: inherit;
+                .about-mobile{
+                    display: none;
+                }
+            }
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1280px) {
+
+}
+@media screen and (min-width: 1440px) {
+
+}
+@media screen and (min-width: 1920px) {
+
+}

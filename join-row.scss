@@ -1,0 +1,82 @@
+
+.join-row{
+    padding: 35px 0;
+    border: 1px solid #354E57;
+    .join-title{
+        color: $primary-color;
+        font-size: $font-size-32;
+        width: 194px;
+        display: inline-block;
+        font-family: $proxima-nova-bold;
+        border-right: 1px solid #eee;
+    padding-right: 10px;
+    margin-right: 20px;
+    }
+    .join-desc{
+        color: $primary-color;
+        font-size: $font-size-16;
+        width: 269px;
+    display: inline-block;
+    padding-top: 22px;
+    vertical-align: top;
+    }
+    .subscribe{
+        width: 400px;
+        height: 40px;
+        text-align: center;
+        display: table;
+    padding-top: 21px;
+        input[type="text"]{
+            padding: 5px;
+            display: inline-block;
+            border: 1px solid #956A53;
+            border-right: 0;
+            width: 300px;
+            height: 40px;
+        }
+        input[type="button"]{
+            background-color: #956A53;
+            display: inline-block;
+            color: $white-color;
+            border: 1px solid #956A53;
+            border-left: 0;
+            margin-left: -3px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (min-width:320px){
+    .join-row{
+       /* display: flex;
+        padding: 36px 86px; */
+        padding: 66px 0px;
+         .subscribe{
+            width: 250px;
+            text-align: left;
+            input[type="text"]{
+                width: 170px;
+            }
+            input[type="button"]{
+                width: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px){
+    .join-row{
+        padding: 35px 86px;
+         .subscribe{
+             float: right;
+            width: 380px;
+            input[type="text"]{
+                width: 300px;
+            }
+            input[type="button"]{
+                width: 80px;
+            }
+        }
+    }
+}

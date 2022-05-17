@@ -1,0 +1,239 @@
+.offer-banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #A67744;
+  height: 40px;
+  color: #F7F5E6;
+  font-family: "ProximaNova";
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e0e4e7;
+}
+
+header .inner-wrapper {
+  height: 84px;
+  margin-top: 44px;
+}
+
+header .left-nav a:first-child {
+  padding-right: 28px;
+  display: inline-block;
+}
+
+header .right-nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .right-nav a {
+  padding-right: 28px;
+  display: inline-block;
+}
+
+header .right-nav a:last-child {
+  padding-right: 0px;
+}
+
+header .left-nav, header .right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+}
+
+header .left-nav a, header .right-nav a {
+  font-size: 12px;
+  font-family: "ProximaNovaBold";
+  color: #354E57;
+  text-decoration: none;
+}
+
+header .middle-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "ProximaNova";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .middle-nav .cross {
+  z-index: 1;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  display: none;
+  top: 30px;
+  left: 40px;
+}
+
+header .middle-nav .cross .fa {
+  font-size: 24px;
+}
+
+header .middle-nav .logo {
+  color: #293D45;
+  font-size: 32px;
+  line-height: 20px;
+  font-family: "SomaticRounded";
+}
+
+header .middle-nav nav {
+  color: #354E57;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 28px;
+  text-transform: capitalize;
+}
+
+header .middle-nav nav a {
+  text-decoration: none;
+  padding: 0 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .icon {
+    display: block;
+  }
+  header .inner-wrapper {
+    margin: 25px;
+    height: auto;
+  }
+  header .inner-wrapper .right-nav a:nth-child(2) {
+    padding-right: 0;
+  }
+  header .inner-wrapper .login-mobile {
+    display: none;
+  }
+  header .inner-wrapper .right-nav-in {
+    margin-top: -29px;
+    position: relative;
+  }
+  header .inner-wrapper .middle-nav {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .inner-wrapper .middle-nav .menu-mobile {
+    display: none;
+  }
+  header .inner-wrapper .middle-nav .logo {
+    line-height: 14px;
+    padding-left: 22px;
+  }
+  header .inner-wrapper .middle-nav nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 80px;
+    padding-left: 30px;
+    height: 100vh;
+  }
+  header .inner-wrapper .middle-nav nav a {
+    padding: 16px 14px;
+  }
+  header .inner-wrapper .middle-nav nav .about-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .icon {
+    display: none;
+  }
+  header .inner-wrapper {
+    height: 84px;
+  }
+  header .inner-wrapper .right-nav a:nth-child(2) {
+    padding-right: 28px;
+  }
+  header .inner-wrapper .login-mobile {
+    display: block;
+  }
+  header .inner-wrapper .middle-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .inner-wrapper .middle-nav .logo {
+    line-height: 20px;
+    padding-left: inherit;
+  }
+  header .inner-wrapper .middle-nav .about-mobile {
+    display: none;
+  }
+  header .inner-wrapper .middle-nav .menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: inherit;
+    background: transparent;
+    position: relative;
+    width: auto;
+    left: inherit;
+    padding-top: inherit;
+    margin-top: 28px;
+    padding-left: inherit;
+    top: inherit;
+  }
+  header .inner-wrapper .middle-nav .menu-mobile .about-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,245 @@
+@import 'variables';
+
+@mixin top-product-values {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.popular-products-row{
+    display: flex;
+    background-color: #EEF3F4;
+    .inner-wrapper{
+        margin: 86px;
+        display: flex;
+        flex-direction: column;
+        .titles {
+            display: block;
+            width: 100%;
+            padding: 0px 0 30px 0;
+            color: #2E2E22;
+            font-size: $font-size-14;
+            font-family: $proxima-nova-bold;
+            .products-title{
+                float: right;
+            }
+        }
+    }
+    .products-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .product{
+            width: 250px;
+            .products-titles {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0;
+                .name{
+                    font-size: $font-size-14;
+                    font-family: $proxima-nova-bold;
+                    color: #2E2E22;
+                }
+                .desc{
+                    font-size: $font-size-12;
+                    font-family: $proxima-nova;
+                    color: #2E2E22;
+                    padding:5px 0 10px 0;
+                }
+                .price{
+                    font-size: $font-size-12;
+                    font-family: $proxima-nova;
+                    color: #2E2E22;   
+                }
+            }
+            
+            .product1{
+                background-image: url(./images/product1.png);
+                @include top-product-values;
+            }
+            .product1:hover{
+                background-image: url(./images/product1_1.png);
+                @include top-product-values;
+                background-size: 100%;
+            }
+            .product2{
+                background-image: url(./images/product2.png);
+                @include top-product-values;
+            }
+            .product2:hover{
+                background-image: url(./images/product2_1.png);
+                @include top-product-values;
+            }
+            .product3{
+                background-image: url(./images/product3.png);
+                @include top-product-values;
+                background-size: 100%;
+            }
+            .product3:hover{
+                background-image: url(./images/product3_1.png);
+                @include top-product-values;
+            }
+            .product4{
+                background-image: url(./images/product4.png);
+                @include top-product-values;
+            }
+            .product4:hover{
+                background-image: url(./images/product4_1.png);
+                @include top-product-values;
+            }
+            
+            .top-product1{
+                background-image: url(./images/top-product1.png);
+                @include top-product-values;
+            }
+            .top-product2{
+                background-image: url(./images/top-product2.png);
+                @include top-product-values;
+            }
+            .top-product3{
+                background-image: url(./images/top-product3.png);
+                @include top-product-values;
+            }
+            .top-product4{
+                background-image: url(./images/top-product4.png);
+                @include top-product-values;
+            }
+            .top-product5{
+                background-image: url(./images/top-product5.png);
+                @include top-product-values;
+            }
+            .top-product6{
+                background-image: url(./images/top-product6.png);
+                @include top-product-values;
+            }
+            .top-product7{
+                background-image: url(./images/top-product7.png);
+                @include top-product-values;
+            }
+            .top-product8{
+                background-image: url(./images/top-product8.png);
+                @include top-product-values;
+            }
+            .product-img{
+                height: 300px;
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                .new{
+                    width: 50px;
+                    height: 28px;
+                    background-color: #F7F7F7;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: $font-size-12;
+                    margin:18px;
+                }
+            }
+        }
+    }
+}
+
+.popular-products-row.recommended{
+    background-color: $white-color;
+    .products-box{
+        .product{
+            .product1, .product1:hover{
+                background-image: url(./images/top-product1.png);
+                background-size: inherit;
+            }
+            .product2, .product2:hover{
+                background-image: url(./images/recommend2.png);
+            }
+            .product3, .product3:hover{
+                background-image: url(./images/recommend3.png);
+            }
+            .product4, .product4:hover{
+                background-image: url(./images/recommend4.png);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .popular-products-row{
+        .inner-wrapper{
+            margin: 86px 18px;
+            .most-popular-show{
+                display: none;
+            }
+        }
+    }
+    .products-box{
+         justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .top-rated, .popular-products-row{
+        .products-box{
+            gap: 10px;
+            .product{
+                width: 128px;
+                padding-bottom: 12px;
+                .product-img{
+                    height: 240px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 400px){
+    .top-rated, .popular-products-row{
+        .products-box{
+            gap: 15px;
+            .product{
+                width: 164px;
+                .product-img{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 600px){
+    .top-rated, .popular-products-row{
+        .products-box{
+            gap: 25px;
+            .product{
+                width: 250px;
+                .product-img{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px){
+    .popular-products-row{
+        .inner-wrapper{
+            margin: 86px;
+            width: 100%;
+            .most-popular-show{
+                display: block;
+            }
+        }
+    }
+    .popular-products-row.recommended{
+        .inner-wrapper{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .products-box{
+       
+        justify-content: space-between;
+    }
+
+    .top-rated, .popular-products-row{
+        .products-box{
+            .product{
+                padding-bottom: 0;
+            }
+        }
+    }
+}

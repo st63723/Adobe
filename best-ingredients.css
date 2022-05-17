@@ -1,0 +1,197 @@
+.best-ingredients {
+  background: #f7f7f7;
+}
+
+.best-ingredients .inner-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 86px 0;
+}
+
+.best-ingredients .inner-wrapper .head-titles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.best-ingredients .inner-wrapper .head-titles h3 {
+  font-size: 28px;
+  font-family: "ProximaNovaBold";
+  margin: 0;
+}
+
+.best-ingredients .inner-wrapper .head-titles h6 {
+  font-size: 16px;
+  font-family: "ProximaNova";
+  margin: 16px 0 0 0;
+  font-weight: lighter;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .row1, .best-ingredients .inner-wrapper .ingredients-box-row .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 100px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient {
+  width: 170px;
+  height: 300px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img1 {
+  background-image: url(./images/ingredient1.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img2 {
+  background-image: url(./images/ingredient2.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img3 {
+  background-image: url(./images/ingredient3.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img4 {
+  background-image: url(./images/ingredient4.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img5 {
+  background-image: url(./images/ingredient5.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img6 {
+  background-image: url(./images/ingredient6.png);
+  background-repeat: no-repeat;
+  height: 170px;
+  width: 170px;
+  background-size: 100% 100%;
+  margin-bottom: 30px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-titles .name {
+  font-family: "ProximaNovaBold";
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-titles .desc {
+  font-family: "ProximaNova";
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient {
+    height: 250px;
+  }
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img1, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img2, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img3,
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img4, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img5, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img6 {
+    margin-bottom: 10px;
+  }
+  .best-ingredients .inner-wrapper .ingredients-box-row .row1, .best-ingredients .inner-wrapper .ingredients-box-row .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .best-ingredients .inner-wrapper {
+    padding: 86px 0;
+  }
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient {
+    height: 300px;
+  }
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img1, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img2, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img3,
+  .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img4, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img5, .best-ingredients .inner-wrapper .ingredients-box-row .ingredient .ingredient-img6 {
+    margin-bottom: 30px;
+  }
+  .best-ingredients .inner-wrapper .ingredients-box-row .row1, .best-ingredients .inner-wrapper .ingredients-box-row .row2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=best-ingredients.css.map */

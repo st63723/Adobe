@@ -1,0 +1,59 @@
+@import 'variables';
+
+.shoping-ways-row{
+    padding: 45px 0;
+    background-color: $gray-color;
+}
+.shopping-ways{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .way{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icons{
+            i.fa{
+                font-size: $font-size-32;
+                color: #C6B9B6;
+            }
+        }
+        .title{
+            font-family: $proxima-nova-bold;
+            padding: 10px 0;
+            width: 150px;
+            text-align: center;
+        }
+        a{
+            font-size: $font-size-12;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media screen and (min-width: 320px){
+    .shoping-ways-row{
+        padding: 86px 0;
+        .shopping-ways{
+            gap: 64px;    
+        }
+    }
+}
+@media screen and (min-width: 321px){
+    .shoping-ways-row{
+        .shopping-ways{
+            gap: 120px;    
+        }
+    }
+}
+@media screen and (min-width: 769px){
+    .shoping-ways-row{
+        padding: 46px 0;
+        .shopping-ways{
+            gap: 120px;    
+        }
+    }
+}

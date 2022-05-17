@@ -1,0 +1,135 @@
+@import 'variables';
+
+@mixin ingredientimg {
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 170px;
+    background-size: 100% 100%;
+    margin-bottom: 30px;
+}
+.best-ingredients{
+    background: #f7f7f7;
+    .inner-wrapper{
+        flex-direction: column;
+        padding: 86px 0;
+        .head-titles {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h3{
+                font-size: $font-size-28;
+                font-family: $proxima-nova-bold;
+                margin:0;
+            }
+            h6{
+                font-size: $font-size-16;
+                font-family: $proxima-nova;
+                margin:16px 0 0 0;
+                font-weight: lighter;
+            }
+        }
+        .ingredients-box-row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            align-items: center;
+            .row1, .row2 {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+            .ingredient{
+                width: 170px;
+                height: 300px;
+                .ingredient-img1{
+                    background-image: url(./images/ingredient1.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-img2{
+                    background-image: url(./images/ingredient2.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-img3{
+                    background-image: url(./images/ingredient3.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-img4{
+                    background-image: url(./images/ingredient4.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-img5{
+                    background-image: url(./images/ingredient5.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-img6{
+                    background-image: url(./images/ingredient6.png);  
+                    @include ingredientimg;                  
+                }
+                .ingredient-titles{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .name{
+                        font-family: $proxima-nova-bold;
+                        font-size: $font-size-14;
+                        padding-bottom: 10px;
+                    }
+                    .desc{
+                        font-family: $proxima-nova;
+                        font-size: $font-size-12;
+                    }
+                }   
+            }
+        }    
+    }    
+}
+
+@media screen and (min-width: 320px) {
+    .best-ingredients{
+         .inner-wrapper{
+             .ingredients-box-row{
+                 .ingredient{
+                    height: 250px;
+                    .ingredient-img1, .ingredient-img2, .ingredient-img3,
+                    .ingredient-img4, .ingredient-img5, .ingredient-img6 {
+                        margin-bottom: 10px;
+                    }
+                 }
+                .row1, .row2{
+                    flex-direction: column;
+                    gap: 15px;
+                }
+           }
+        }
+    }  
+}
+
+@media screen and (min-width: 600px) {
+    .best-ingredients{
+         .inner-wrapper{
+            padding: 86px 0;
+             .ingredients-box-row{
+                .ingredient{
+                    height: 300px;
+                    .ingredient-img1, .ingredient-img2, .ingredient-img3,
+                    .ingredient-img4, .ingredient-img5, .ingredient-img6 {
+                        margin-bottom: 30px;
+                    }
+                 }
+                .row1, .row2{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 100px;
+                    align-items: center;
+                    justify-content: center;
+                }
+           }
+        }
+    }  
+}
+
+
